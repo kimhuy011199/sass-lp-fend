@@ -1,0 +1,69 @@
+.faq {
+  &__container {
+    max-width: 80rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 25rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__container {
+    margin-top: 6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__accordion {
+    cursor: pointer;
+    width: 100%;
+    border-bottom: var(--grey-border);
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0.8rem 0.6rem;
+    }
+  }
+
+  &__question {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__panel {
+    margin: 1rem 1.2rem 1.6rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin: 1rem 0.8rem 1.2rem;
+    }
+  }
+
+  &__icon {
+    width: 1rem;
+    transform-origin: center;
+  }
+
+  &__rotate {
+    transform: rotate(180deg);
+  }
+}

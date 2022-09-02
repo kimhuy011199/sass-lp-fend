@@ -1,0 +1,58 @@
+.row {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0 1.5rem;
+  }
+}
+
+.section {
+  padding: 12rem 0rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 10rem 0rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 8rem 0rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.2rem;
+  text-decoration: none;
+  border-radius: 50rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  align-self: start;
+
+  &--white {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+  }
+
+  &--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+
+  &--primary:hover {
+    background-color: var(--primary-color-light);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.4rem;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

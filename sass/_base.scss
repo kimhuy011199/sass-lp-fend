@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Mono&display=swap");
+
+:root {
+  // COLOR VARIABLES
+  --primary-color: #8246ff;
+  --primary-color-light: #9462ff;
+  --secondary-color: #ee8aff;
+  --white-color: #fff;
+  --black-color: #111;
+  --dark-grey-color: #555;
+  --grey-color: #c4c2c8;
+  --dark-bg-color: #0f0e12;
+  --pink-color: #d96eae;
+  --cyan-color: #77c7da;
+  --blue-color: #5e5fba;
+  --yellow-color: #ecca98;
+  --border: 2px solid #222;
+  --grey-border: 1px solid #f1f1f1;
+  --box-shadow: 0rem 2rem 6rem rgba(0, 0, 0, 0.08);
+
+  // WIDTH VARIABLES
+  --page-width: 114rem;
+  --gutter-10: 1rem;
+  --gutter-15: 1.5rem;
+  --gutter-20: 2rem;
+  --gutter-25: 2.5rem;
+  --gutter-30: 3rem;
+
+  // FONT VARIABLES
+  --font-primary: "Urbanist", sans-serif;
+  --font-secondary: "PT Mono", monospace;
+}
+
+// BREAKPOINTS
+$bp-large: 64em; // 1024px
+$bp-medium: 50em; // 800px
+$bp-small: 40em; // 640px
+$bp-smallest: 30em; // 480px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 16px
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-weight: 400;
+  line-height: 1.6;
+}

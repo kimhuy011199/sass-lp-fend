@@ -1,0 +1,66 @@
+.cta {
+  &__container {
+    background-color: var(--primary-color);
+    padding: 8rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 6rem 4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      padding: 7rem 0rem 5rem;
+      margin-bottom: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+      padding: 7rem 6rem 5rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1rem;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+  }
+
+  &__sub {
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    max-width: 11rem;
+    position: absolute;
+    top: -6rem;
+    left: 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+      left: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      left: 4rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

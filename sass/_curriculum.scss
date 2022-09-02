@@ -1,0 +1,161 @@
+.curriculum {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__left,
+  &__right,
+  &__card,
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__description {
+    gap: 1rem;
+    max-width: 47rem;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 60rem;
+    }
+  }
+
+  &__card {
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    gap: 1rem;
+    position: relative;
+    margin-top: 2rem;
+
+    &--1 {
+      color: var(--pink-color);
+    }
+
+    &--2 {
+      color: var(--cyan-color);
+    }
+
+    &--3 {
+      color: var(--blue-color);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 60rem;
+      margin-left: auto;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 3rem;
+    }
+  }
+
+  &__session {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black-color);
+  }
+
+  &__heading {
+    color: currentColor;
+  }
+
+  &__total {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  &__icon {
+    width: 2.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-top: 1.5rem;
+
+    &--1 {
+      color: var(--pink-color);
+    }
+
+    &--2 {
+      color: var(--cyan-color);
+    }
+
+    &--3 {
+      color: var(--blue-color);
+    }
+  }
+
+  &__item {
+    display: flex;
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__number {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    margin-right: 1.8rem;
+    color: currentColor;
+  }
+
+  &__name {
+    color: var(--black-color);
+  }
+
+  &__min {
+    font-family: var(--font-secondary);
+    margin-left: auto;
+    color: var(--grey-color);
+  }
+
+  &__icon {
+    color: currentColor;
+  }
+
+  &__image {
+    max-width: 12rem;
+    position: absolute;
+    top: -3rem;
+    right: 2rem;
+    opacity: 1;
+    transition: all 0.5s;
+
+    &--hidden {
+      top: -5rem;
+      right: 0rem;
+      opacity: 0;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 10rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
